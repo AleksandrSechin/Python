@@ -18,3 +18,4 @@ if train_num == train_num_head:
     print("Решений нет")
 else:
     print(f'Количество вагонов: {train_num_head + train_num - 1}')
+    
