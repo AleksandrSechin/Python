@@ -9,3 +9,8 @@
 
 n = 6
 print(int(n / 6), int(n * 2 /3), int(n / 6))
+
+n1 = n // 6
+n2 = n // 6
+n3 = (n // 6) * 4
+print(n1, n3, n2)
