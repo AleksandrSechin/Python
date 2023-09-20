@@ -18,7 +18,7 @@ x = int(input("Введите число Х: "))
 print(list_1.count(x))
 
 count = 0
-for i in list:
+for i in list_1:
     if i == x:
         count += 1
 print(count)
