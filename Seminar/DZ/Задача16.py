@@ -16,3 +16,9 @@ for _ in range(n):
 print(*list_1)
 x = int(input("Введите число Х: "))
 print(list_1.count(x))
+
+count = 0
+for i in list:
+    if i == x:
+        count += 1
+print(count)

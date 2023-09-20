@@ -6,3 +6,15 @@
 # 6
 # -> 5
 
+import random
+
+
+n = int(input("Введите количество элементов: "))
+list_1 = []
+for _ in range(n):
+    list_1.append(random.randint(1, 10))
+print(*list_1)
+x = int(input("Введите число Х: "))
+
+
+print(list_1.count(x))
