@@ -10,11 +10,16 @@ import random
 
 
 n = int(input("Введите количество элементов: "))
-list_1 = []
-for _ in range(n):
-    list_1.append(random.randint(1, 10))
+list_1 = [random.randint(1, 10) for num in range(n)]
 print(*list_1)
 x = int(input("Введите число Х: "))
-
-
-print(list_1.count(x))
+min_dif = abs(list_1[0] - x)
+lst = list_1[0]
+for num in list_1[1:]:
+    dif = abs(num - x)
+    if dif < min_dif:
+        min_dif = dif   # min_dif = min(min_dif, dif) функция поиска минимума
+        lst = [num]
+    # elif dif == min_dif and num not in lst:
+    #     lst.append(num)
+print(*lst)
