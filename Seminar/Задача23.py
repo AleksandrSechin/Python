@@ -12,7 +12,7 @@ print(rnd)
 list_1 = []
 for _ in range(rnd):
     list_1.append(random.randint(-50, 101))
-    list_2 = [random.randint(-50, 101) for _ in range(rnd)]  #
+    list_2 = [random.randint(-50, 101) for _ in range(rnd)]  # list comprehension
 print(list_1)
 
 count = 0
