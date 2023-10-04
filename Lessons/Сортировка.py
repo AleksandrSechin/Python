@@ -1,4 +1,4 @@
-# Быстрая сортировка
+# Быстрая сортировка (с рекурсией)
 
 def quick_sort(array):
     if len(array) <= 1:
@@ -41,6 +41,7 @@ def merge_sort(nums):
             nums[k] = right[j]
             j += 1
             k += 1
+
 
 list1 = [1, 5, 4, 9, 7, 22, 16, 8]
 merge_sort(list1)
