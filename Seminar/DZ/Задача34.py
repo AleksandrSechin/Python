@@ -46,3 +46,19 @@ elif len(res) - 1 == 0:
     print('Количество фраз должно быть больше одной!')
 else:
     print('Пам парам')
+
+# Третье решение автотеста
+vowels = ['а', 'е', 'ё', 'и', 'й', 'о', 'у', 'ы', 'э', 'ю', 'я']
+phrases = stroka.split()
+if len(phrases) < 2:
+    print('Количество фраз должно быть больше одной!')
+else:
+    countVowels = []
+
+for i in phrases:
+    countVowels.append(len([x for x in i if x.lower() in vowels]))
+
+    if countVowels.count(countVowels[0]) == len(countVowels):
+        print('Парам пам-пам')
+    else:
+        print('Пам парам')
