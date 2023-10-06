@@ -11,3 +11,4 @@ step = int(input('Введите шаг: '))
 number = int(input('Введите количество элементов: '))
 for i in range(number):
     print(first_element + i * step, end=' ')
+
