@@ -60,3 +60,53 @@ list_1 = [(i, i) for i in range(1, 101) if i % 2 == 0] # [(2, 2), (4, 4),..., (1
 # Также можно умножать, делить, прибавлять, вычитать. Например, умножить значение на 2
 list_1 = [i * 2 for i in range(10) if i % 2 == 0]
 print(list_1) # [0, 4, 8, 12, 16]
+
+
+# Копирование списков и их изменение
+import copy
+
+my_list = [111, 222, 333, 444, 555]
+
+my_list_1 = my_list
+
+my_list_1[2] = 0
+
+print(my_list)
+print(my_list_1)
+print()
+my_list_2 = my_list.copy()
+
+my_list_2[2] = 999
+
+print(my_list)
+print(my_list_2)
+print()
+
+my_list.append([123,234,345])
+my_list_3 = my_list.copy()
+print(my_list)
+print(my_list_3)
+print()
+
+my_list_3[2] = 100
+my_list_3[-1][1] = 200
+print(my_list)
+print(my_list_3)
+print()
+
+
+my_list_4 = copy.deepcopy(my_list)
+print(my_list)
+print(my_list_4)
+print()
+
+my_list_4[2] = '*****'
+my_list_4[-1][1] = '~~~~~~'
+print(my_list)
+print(my_list_4)
+print()
+
+my_tuple = (123,234,456,678, [100, 200, 300])
+print(my_tuple)
+my_tuple[-1][-1] = 999999
+print(my_tuple)
